@@ -74,21 +74,13 @@ textarea {
     }
     
 
-input:focus,
+input[type]:focus,
 textarea:focus,
 select:focus {
     outline: none;
     border: 5px solid #3bab;
     background-color: white;
     }
-
-input[type="text"]:active,
-textarea:active,
-select:active {
-        background-color: white;
-        }
-    
-
 
 .textarea p:last-child {
     text-align: center;
