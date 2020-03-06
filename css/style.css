@@ -79,7 +79,16 @@ textarea:focus,
 select:focus {
     outline: none;
     border: 5px solid #3bab;
-    }   
+    background-color: white;
+    }
+
+input[type="text"]:active,
+textarea:active,
+select:active {
+        background-color: white;
+        }
+    
+
 
 .textarea p:last-child {
     text-align: center;
@@ -104,9 +113,7 @@ textarea {
     width: 768px;
     margin-bottom: 1em;
     resize: none;
-    
     }
-
 
 /* ---- Id and Classes ------ */
 
@@ -125,10 +132,11 @@ header {
     margin-bottom: 2em;
     }
 
-body {
+.wrapper {
     max-width: 768px;
     padding: 1em;
     margin: auto;
+    background-color: rgba(157, 241, 213, 0.11);
     }
 
 input:focus {
