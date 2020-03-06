@@ -20,8 +20,8 @@
 
         <main>
             <form action="index.html" method="POST" class="form_class">
-                <div class="personal">
-                    <h2>Contact Information</h2>
+                <fieldset class="personal">
+                    <legend>Contact Information</legend>
 
                     <div class="col">
                         <label class="item1" for="user_name">Full name</label>
@@ -113,11 +113,12 @@
                         <label class="" for="user_zip">Zip Code</label>
                         <input class="" placeholder="Optional" type="text" name="user_zip" id="user_zip">
                     </div>
-                </div>
+                </fieldset>
 
-                <div class="newsletter">
+                <fieldset class="personal">
 
-                    <h2>Newsletter</h2>
+                    <legend>Newsletter</legend>
+
                     <div class="recieve">
                         <p>Select the newsletters your would like to recieve</p>
                         <input type="checkbox" name="html_news" id="html_news"><label for="html_news">Html
@@ -135,12 +136,12 @@
                     </div>
 
                     <div class="textarea">
-                        <p>Other topics you'd like to hear about:</p>
+                        <label for="topics">Other topics you'd like to hear about:</label>
                         <textarea name="topics" id="topics" cols="90" rows="10"></textarea><br>
                         <input id="submit" type="submit" value="Sign up"><br>
                         <p>Copyright The Code Review</p>
                     </div>
-                </div>
+                </fieldset>
             </form>
         </main>
     </div>
