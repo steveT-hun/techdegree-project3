@@ -22,7 +22,8 @@ h2 {
 }
 
 p,
-label  {
+label,
+input[type="submit"]  {
     font-family: 'Libre Baskerville', Arial, Helvetica, sans-serif;
     font-size: 1rem;
 }
@@ -37,11 +38,17 @@ input[type="radio"] {
 input[type="submit"] {
     background-color: #3bab;
     color: white;
+    text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 2px;
     padding: 1em 0 1em;
     font-size: 1.2em;
     margin-top: 1em;
     margin-bottom: 1em;
-    } 
+    }
+
+input[type="submit"]:active,
+select option {
+    background-color: rgba(50, 160, 147, 0.733);
+}    
     
 input[type="submit"]:hover {
     opacity: .8;
@@ -68,8 +75,10 @@ textarea {
     
 
 input:focus,
-textarea:focus {
-    border: 3px solid rgba(124, 17, 124, .8);
+textarea:focus,
+select:focus {
+    outline: none;
+    border: 5px solid #3bab;
     }   
 
 .textarea p:last-child {
@@ -122,7 +131,9 @@ body {
     margin: auto;
     }
 
-
+input:focus {
+    background-color: rgba(190, 184, 184, 0.295);
+}
 
 
 
