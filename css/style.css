@@ -1,0 +1,161 @@
+/* --- Universal selector --------- */
+* { 
+    box-sizing: border-box;
+    }
+
+/* --- Font family ------ */
+@font-face {
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+/* --- Target element ------ */
+
+h1 {
+    font-family: 'Barlow Condensed', Arial, Helvetica, sans-serif;
+    font-size: 3em;
+}
+
+h2 {
+    padding-top: 1em;
+}
+
+p,
+label  {
+    font-family: 'Libre Baskerville', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+    background-color: cornflowerblue;
+
+    }
+
+input[type="submit"] {
+    background-color: #3bab;
+    color: white;
+    padding: 1em 0 1em;
+    font-size: 1.2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    } 
+    
+input[type="submit"]:hover {
+    opacity: .8;
+}   
+
+label {
+    margin: 10px 0 10px 5px;
+    color: grey;
+    font-weight: 100;
+    display: inline-block;  
+    }
+
+input,
+select,
+option,
+textarea {
+    padding: 12px;
+    font-size: 1em;
+    background-color: rgba(224, 223, 223, 0.521);
+    border-radius: 5px;
+    border: 0;
+    width: 100%;
+    }
+    
+
+input:focus,
+textarea:focus {
+    border: 3px solid rgba(124, 17, 124, .8);
+    }   
+
+.textarea p:last-child {
+    text-align: center;
+    margin: auto 0;
+    padding: 1em;
+    font-style: italic;
+    color: rgb(109, 109, 109);
+    }
+
+.col_last input:last-child {
+    width: 50%;
+    display: block;
+    }
+
+input::placeholder {
+    text-align: right;
+    font-style: italic;
+    }      
+
+textarea {
+    max-width: 100%;
+    width: 768px;
+    margin-bottom: 1em;
+    resize: none;
+    
+    }
+
+
+/* ---- Id and Classes ------ */
+
+header {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 1em;
+    border-bottom: black 5px solid;
+
+    }
+
+.personal ,
+.newsletter {
+    border-top: black 2px solid;
+    margin-top: 2px;
+    margin-bottom: 2em;
+    }
+
+body {
+    max-width: 768px;
+    padding: 1em;
+    margin: auto;
+    }
+
+
+
+
+
+/*--- Media Queries ---------*/
+
+@media (min-width: 768px) {  
+
+    .col {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .item1 {
+        flex: 1 30%;
+    }
+
+    .item2 {
+        flex-grow: 2;
+    }
+
+    .col_last label {
+        width: 23%;
+    }
+    
+    .col_last {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .col_last input:last-child {
+        width: 30%;
+        display: block;
+        }
+}
