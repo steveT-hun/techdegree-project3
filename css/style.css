@@ -106,9 +106,8 @@ input::placeholder {
     font-style: italic;
     }      
 
-:focus::-webkit-input-placeholder {
+:focus::placeholder {
     opacity: 0;
-    -webkit-transition: opacity 0.5s ease-in-out;
     transition: opacity 0.5s ease-in-out;
       }
 
@@ -155,6 +154,7 @@ header {
 
 input:focus {
     background-color: rgba(190, 184, 184, 0.295);
+    transition: background-color 0.5s ease-in-out;
 }
 
 .col:first-of-type {
